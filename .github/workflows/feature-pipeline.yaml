@@ -21,6 +21,6 @@ jobs:
     uses: tata-actions/workflows/.github/workflows/dev-nodejs-pipeline.yaml@main
     with:
       project: roboshop
-      component: catalogue
+      component: cart
       environment: dev
     secrets: inherit   
