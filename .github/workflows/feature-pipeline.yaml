@@ -1,4 +1,4 @@
-name: feature-pipeline-cart
+name: ffeature-pipeline-cart
 
 on: [push]
 permissions:
