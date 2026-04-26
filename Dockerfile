@@ -6,7 +6,7 @@
 #5.Node modules
 
 
-FROM node:20.19.5-alpine3.21 AS build
+FROM node:20-alpine AS build
 WORKDIR /opt/server
 COPY package.json .
 COPY *.js .
@@ -14,7 +14,7 @@ COPY *.js .
 RUN npm install 
 
 
-FROM node:20.19.5-alpine3.21
+FROM node:20-alpine
 # Create a group and user
 WORKDIR /opt/server
 RUN addgroup -S roboshop && adduser -S roboshop -G roboshop && \
